@@ -47,44 +47,44 @@
   </div>
 </template>
 <script>
-  import code from '@/api/code'
+import code from '@/api/code'
 
-  export default {
-    name: 'codeManage',
-    data() {
-      return {
-        codeData: [],
-        total: 0,        //数据总数
-        pageSize: 10,    //每页显示数量
-        currentPage: 1,   //当前页数
-        loading: true
-      }
+export default {
+  name: 'codeManage',
+  data () {
+    return {
+      codeData: [],
+      total: 0, // 数据总数
+      pageSize: 10, // 每页显示数量
+      currentPage: 1, // 当前页数
+      loading: true
+    }
+  },
+  created () {
+    this.load()
+  },
+  methods: {
+    load () {
+      code.getCode(this.currentPage, this.pageSize).then(res => {
+        this.codeData = res.data.rows
+        this.total = res.data.total
+        this.loading = false
+      })
     },
-    created() {
+    currentChange (currentPage) { // 页码更改事件处理
+      this.currentPage = currentPage
       this.load()
+      scrollTo(0, 0)
     },
-    methods: {
-      load() {
-        code.getCode(this.currentPage, this.pageSize).then(res => {
-          this.codeData = res.data.rows;
-          this.total = res.data.total;
-          this.loading = false;
-        });
-      },
-      currentChange(currentPage) { //页码更改事件处理
-        this.currentPage = currentPage;
-        this.load();
-        scrollTo(0, 0);
-      },
-      generateCode() {
-        code.generateCode().then(res => {
-          this.$message({
-            message: '生成成功',
-            type: 'success'
-          });
-          this.load();
+    generateCode () {
+      code.generateCode().then(res => {
+        this.$message({
+          message: '生成成功',
+          type: 'success'
         })
-      }
+        this.load()
+      })
     }
   }
+}
 </script>

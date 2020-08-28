@@ -44,84 +44,81 @@
 </template>
 <script>
 
-  import blog from '@/api/blog'
-  import 'element-ui/lib/theme-chalk/display.css';
+import blog from '@/api/blog'
+import 'element-ui/lib/theme-chalk/display.css'
 
-  export default {
-    name: 'blogOverView',
-    props: ['id', 'title', 'body', 'time', 'blogViews', 'discussCount', 'tags', 'name'],
-    data() {
-      return {
-        show: false
-      }
-    },
-    methods: {
-      router(id) {
-        scrollTo(0, 0);
-        this.$router.push({ //路由跳转
-          path: '/blog/' + id
-        });
-      },
-      pEnter() {
-        this.show = true;
-      },
-      pLeave() {
-        this.show = false;
-      },
-      getStoreName() { //获取store中存储的name
-        return this.$store.state.name;
-      },
-      getStoreRoles() { //获取store中存储的roles
-        return this.$store.state.roles;
-      },
-      deleteBlog(id) {
-
-        this.$confirm('是否删除此博客?', '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          type: 'warning'
-        }).then(() => {
-          if (this.$store.state.roles.indexOf('ADMIN') > -1) {
-            //管理员
-            blog.adminDeleteBlog(id).then(res => {
-              this.$message({
-                type: 'success',
-                message: '删除成功'
-              });
-              window.location.reload()
-            })
-          } else {
-            //普通用户
-            blog.userDeleteBlog(id).then(res => {
-              this.$message({
-                type: 'success',
-                message: '删除成功'
-              });
-              window.location.reload()
-            })
-          }
-        }).catch(() => {
-        });
-
-      },
-      bodyTran(body) { //将数据库中带标签的博文转换为纯文本
-
-        var dd = body.replace(new RegExp('#', 'g'), "");
-        dd = dd.replace(new RegExp('!\\[.*\\]\\(.*\\)', 'g'), "[图片]");
-        dd = dd.replace(new RegExp('\\[.*\\]\\(.*\\)', 'g'), "[链接]");
-        dd = dd.replace(new RegExp('-', 'g'), "");
-        dd = dd.replace(new RegExp('>', 'g'), "");
-        dd = dd.replace(new RegExp('`', 'g'), "");
-        return dd;
-      },
-      editBlog(id) {
-        this.$router.push({ //路由跳转
-          path: '/editBlog/' + id
-        })
-      }
-
+export default {
+  name: 'blogOverView',
+  props: ['id', 'title', 'body', 'time', 'blogViews', 'discussCount', 'tags', 'name'],
+  data () {
+    return {
+      show: false
     }
+  },
+  methods: {
+    router (id) {
+      scrollTo(0, 0)
+      this.$router.push({ // 路由跳转
+        path: '/blog/' + id
+      })
+    },
+    pEnter () {
+      this.show = true
+    },
+    pLeave () {
+      this.show = false
+    },
+    getStoreName () { // 获取store中存储的name
+      return this.$store.state.name
+    },
+    getStoreRoles () { // 获取store中存储的roles
+      return this.$store.state.roles
+    },
+    deleteBlog (id) {
+      this.$confirm('是否删除此博客?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        if (this.$store.state.roles.indexOf('ADMIN') > -1) {
+          // 管理员
+          blog.adminDeleteBlog(id).then(res => {
+            this.$message({
+              type: 'success',
+              message: '删除成功'
+            })
+            window.location.reload()
+          })
+        } else {
+          // 普通用户
+          blog.userDeleteBlog(id).then(res => {
+            this.$message({
+              type: 'success',
+              message: '删除成功'
+            })
+            window.location.reload()
+          })
+        }
+      }).catch(() => {
+      })
+    },
+    bodyTran (body) { // 将数据库中带标签的博文转换为纯文本
+      var dd = body.replace(new RegExp('#', 'g'), '')
+      dd = dd.replace(new RegExp('!\\[.*\\]\\(.*\\)', 'g'), '[图片]')
+      dd = dd.replace(new RegExp('\\[.*\\]\\(.*\\)', 'g'), '[链接]')
+      dd = dd.replace(new RegExp('-', 'g'), '')
+      dd = dd.replace(new RegExp('>', 'g'), '')
+      dd = dd.replace(new RegExp('`', 'g'), '')
+      return dd
+    },
+    editBlog (id) {
+      this.$router.push({ // 路由跳转
+        path: '/editBlog/' + id
+      })
+    }
+
   }
+}
 </script>
 <style scoped>
   #blogOverView {

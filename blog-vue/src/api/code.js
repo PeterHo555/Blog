@@ -1,14 +1,13 @@
 import request from '@/utils/request'
 
-
 export default {
-  getCode(page, showCount) {
+  getCode (page, showCount) {
     return request({
       url: '/code/' + page + '/' + showCount,
       method: 'get'
     })
   },
-  generateCode() {
+  generateCode () {
     return request({
       url: '/code',
       method: 'post'

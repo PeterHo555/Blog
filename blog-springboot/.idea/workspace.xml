@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34c9f5db-20aa-4f07-8e7a-715925a431b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/announcement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/announcement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/discuss.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/discuss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/other.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/other.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/reply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/userLike.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/userLike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/bar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/blogOverView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/blogOverView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/bottom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/bottom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/hotBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/hotBlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/indexBlogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/indexBlogList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/introduction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/introduction.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/myBlogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/myBlogList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/myTag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/myTag.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/newDiscuss.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/newDiscuss.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/statisticalBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/statisticalBlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/userNewDiscuss.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/userNewDiscuss.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/utils/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/utils/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/utils/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/utils/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/account.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/admins.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/admins.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/announcement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/announcement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/announcementManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/announcementManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/blog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/blogManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/blogManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/codeManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/codeManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/editBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/editBlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/forgetPwd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/forgetPwd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/message.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/myBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/myBlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/newBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/newBlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/notfound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/notfound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/searchBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/searchBlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/userManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/userManage.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gfq4l1fTKHSnUmOIpOOlxF9BpU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog-springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzx.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34c9f5db-20aa-4f07-8e7a-715925a431b6" name="Default Changelist" comment="" />
+      <created>1598515805823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598515805823</updated>
+      <workItem from="1598515811756" duration="3733000" />
+      <workItem from="1598527522435" duration="605000" />
+      <workItem from="1598528170780" duration="201000" />
+      <workItem from="1598528394407" duration="2732000" />
+      <workItem from="1598532320929" duration="5307000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="445" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598528412587">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state x="445" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598528412587" />
+    <state x="817" y="449" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1598528078775">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state x="817" y="449" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598528078775" />
+    <state width="1836" height="309" key="GridCell.Tab.0.bottom" timestamp="1598600324599">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.0.bottom/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324599" />
+    <state width="1836" height="309" key="GridCell.Tab.0.center" timestamp="1598600324597">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.0.center/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324597" />
+    <state width="1836" height="309" key="GridCell.Tab.0.left" timestamp="1598600324596">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.0.left/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324596" />
+    <state width="1836" height="309" key="GridCell.Tab.0.right" timestamp="1598600324598">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.0.right/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324598" />
+    <state width="1836" height="309" key="GridCell.Tab.1.bottom" timestamp="1598600324604">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.1.bottom/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324604" />
+    <state width="1836" height="309" key="GridCell.Tab.1.center" timestamp="1598600324602">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.1.center/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324602" />
+    <state width="1836" height="309" key="GridCell.Tab.1.left" timestamp="1598600324601">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.1.left/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324601" />
+    <state width="1836" height="309" key="GridCell.Tab.1.right" timestamp="1598600324603">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state width="1836" height="309" key="GridCell.Tab.1.right/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598600324603" />
+    <state x="519" y="215" key="Maven.ArtifactSearchDialog" timestamp="1598532084143">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state x="519" y="215" key="Maven.ArtifactSearchDialog/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598532084143" />
+    <state x="490" y="190" key="SettingsEditor" timestamp="1598527585587">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state x="490" y="190" key="SettingsEditor/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598527585587" />
+    <state x="651" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1598532427333">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state x="651" y="386" key="com.intellij.ide.util.TipDialog/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598532427333" />
+    <state x="658" y="320" width="645" height="462" key="find.popup" timestamp="1598599605957">
+      <screen x="42" y="23" width="1878" height="1057" />
+    </state>
+    <state x="658" y="320" width="645" height="462" key="find.popup/1920.200.1280.777/42.23.1878.1057@42.23.1878.1057" timestamp="1598599605957" />
+  </component>
+</project>

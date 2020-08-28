@@ -11,22 +11,22 @@
 </template>
 
 <script>
-  import site from '@/api/site'
+import site from '@/api/site'
 
-  export default {
-    name: 'introduction',
-    data() {
-      return {
-        introduction: ''
-      }
-    },
-    created() {
-      site.getSite().then(responese => {
-        this.introduction = responese.data;
-      });
+export default {
+  name: 'introduction',
+  data () {
+    return {
+      introduction: ''
     }
-
+  },
+  created () {
+    site.getSite().then(responese => {
+      this.introduction = responese.data
+    })
   }
+
+}
 </script>
 <style scoped>
   #introduction {

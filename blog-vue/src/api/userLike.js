@@ -1,25 +1,25 @@
 import request from '@/utils/request'
-import qs from 'qs';
+import qs from 'qs'
 
 export default {
-  saveUserLike(blogId, status) {
+  saveUserLike (blogId, status) {
     return request({
-        url: '/userLike/saveUserLike',
-        method: 'post',
-        header: 'Content-Type:application/json',
-        data: qs.stringify({"blog.id": blogId, "status": status})
+      url: '/userLike/saveUserLike',
+      method: 'post',
+      header: 'Content-Type:application/json',
+      data: qs.stringify({'blog.id': blogId, 'status': status})
     })
   },
-  getBlogLikeCount(blogId) {
+  getBlogLikeCount (blogId) {
     return request({
-        url: '/blog/getBlogLikeCount'+ '/' + blogId,
-        method: 'get'
+      url: '/blog/getBlogLikeCount' + '/' + blogId,
+      method: 'get'
     })
   },
-  isUserLike(blogId) {
+  isUserLike (blogId) {
     return request({
-        url: '/userLike/isUserLike'+ '/' + blogId,
-        method: 'get'
+      url: '/userLike/isUserLike' + '/' + blogId,
+      method: 'get'
     })
-  },
+  }
 }

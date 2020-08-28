@@ -13,21 +13,21 @@
 </template>
 
 <script>
-  import blog from '@/api/blog'
+import blog from '@/api/blog'
 
-  export default {
-    name: 'statisticalBlog',
-    data() {
-      return {
-        blogCount: []
-      }
-    },
-    created() {
-      blog.getStatisticalBlogByMonth().then(responese => {
-        this.blogCount = responese.data;
-      });
+export default {
+  name: 'statisticalBlog',
+  data () {
+    return {
+      blogCount: []
     }
+  },
+  created () {
+    blog.getStatisticalBlogByMonth().then(responese => {
+      this.blogCount = responese.data
+    })
   }
+}
 </script>
 
 <style scoped>

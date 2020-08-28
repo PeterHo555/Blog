@@ -52,7 +52,7 @@ export default new Router({
       path: '/admins',
       name: 'admins',
       component: admins,
-      children: [  //这里就是二级路由的配置
+      children: [ // 这里就是二级路由的配置
         {
           path: 'userManage',
           name: 'userManage',

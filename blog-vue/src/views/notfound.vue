@@ -17,14 +17,14 @@
 
 </template>
 <script>
-  export default {
-    name: 'notfound',
-    methods: {
-      back() {
-        history.back()
-      }
+export default {
+  name: 'notfound',
+  methods: {
+    back () {
+      history.back()
     }
   }
+}
 </script>
 <style scoped>
 

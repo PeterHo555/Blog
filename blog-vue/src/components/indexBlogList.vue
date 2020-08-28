@@ -12,7 +12,6 @@
 
     </div>
 
-
     <div>
       <el-pagination
         :pager-count="5"
@@ -29,53 +28,51 @@
   </div>
 </template>
 <script>
-  import blogOverView from '@/components/blogOverView'
-  import blog from '@/api/blog'
-  import date from '@/utils/date'
+import blogOverView from '@/components/blogOverView'
+import blog from '@/api/blog'
+import date from '@/utils/date'
 
-  export default {
-    name: 'indexBlogList',
-    components: {blogOverView},
-    data() {
-      return {
-        total: 0,        //数据总数
-        blogList: [],   //当前页数据
-        pageSize: 5,    //每页显示数量
-        currentPage: 1,   //当前页数
-        loading: true
-      }
+export default {
+  name: 'indexBlogList',
+  components: {blogOverView},
+  data () {
+    return {
+      total: 0, // 数据总数
+      blogList: [], // 当前页数据
+      pageSize: 5, // 每页显示数量
+      currentPage: 1, // 当前页数
+      loading: true
+    }
+  },
+  created () {
+    this.loadBlog()
+  },
+  methods: {
+    getTime (time) { // 将时间戳转化为几分钟前，几小时前
+      return date.timeago(time)
     },
-    created() {
-      this.loadBlog();
-    },
-    methods: {
-      getTime(time) {//将时间戳转化为几分钟前，几小时前
-        return date.timeago(time);
-      },
-      catchTagName(tag) { //从tag对象数组中拿到tag.Name属性
-
-        var tagNames = [];
-        for (var i = 0; i < tag.length; i++) {
-          tagNames.push(tag[i].name)
-        }
-        return tagNames;
-      },
-      currentChange(currentPage) { //页码更改事件处理
-        this.currentPage = currentPage;
-        this.loadBlog();
-        scrollTo(0, 0);
-      },
-      loadBlog() { //加载数据
-        blog.getBlogHome(this.currentPage, this.pageSize).then(responese => {
-          this.total = responese.data.total;
-          this.blogList = responese.data.rows;
-
-          this.loading = false;
-        });
-
+    catchTagName (tag) { // 从tag对象数组中拿到tag.Name属性
+      var tagNames = []
+      for (var i = 0; i < tag.length; i++) {
+        tagNames.push(tag[i].name)
       }
+      return tagNames
+    },
+    currentChange (currentPage) { // 页码更改事件处理
+      this.currentPage = currentPage
+      this.loadBlog()
+      scrollTo(0, 0)
+    },
+    loadBlog () { // 加载数据
+      blog.getBlogHome(this.currentPage, this.pageSize).then(responese => {
+        this.total = responese.data.total
+        this.blogList = responese.data.rows
+
+        this.loading = false
+      })
     }
   }
+}
 </script>
 <style scoped>
   #indexBlogList {

@@ -18,7 +18,6 @@
       <el-divider/>
     </div>
 
-
     <div style="padding-bottom: 4%">
       <el-pagination
         :page-size="pageSize"
@@ -36,52 +35,52 @@
   </el-card>
 </template>
 <script>
-  import announcement from '@/api/announcement'
-  import date from '@/utils/date'
+import announcement from '@/api/announcement'
+import date from '@/utils/date'
 
-  export default {
-    name: 'announcement',
-    data() {
-      return {
-        total: 0,        //数据总数
-        announcementList: [],   //当前页数据防止空页面的突兀
-        pageSize: 5,    //每页显示数量
-        currentPage: 1,   //当前页数
-        loading: true //是否加载中
+export default {
+  name: 'announcement',
+  data () {
+    return {
+      total: 0, // 数据总数
+      announcementList: [], // 当前页数据防止空页面的突兀
+      pageSize: 5, // 每页显示数量
+      currentPage: 1, // 当前页数
+      loading: true // 是否加载中
+    }
+  },
+  created () {
+    this.loadAnnouncement()
+  },
+  updated: function () {
+    var w = document.documentElement.offsetWidth || document.body.offsetWidth
+    if (w < 768) { // 对应xs
+      var tops = document.getElementsByClassName('subscript')
+      for (var i = 0; i < tops.length; i++) {
+        tops[i].style.marginLeft = '80%'
       }
+    }
+  },
+  methods: {
+    loadAnnouncement () {
+      announcement.getAnnouncement(this.currentPage, this.pageSize).then(res => {
+        this.total = res.data.total
+        this.announcementList = res.data.rows
+        this.loading = false
+      })
     },
-    created() {
-      this.loadAnnouncement();
+    currentChange (currentPage) { // 页码更改事件处理
+      this.currentPage = currentPage
+      this.loadAnnouncement()
     },
-    updated: function () {
-      var w = document.documentElement.offsetWidth || document.body.offsetWidth;
-      if (w < 768) {  //对应xs
-        var tops = document.getElementsByClassName('subscript');
-        for (var i = 0; i < tops.length; i++) {
-          tops[i].style.marginLeft = '80%'
-        }
-      }
+    getStoreRoles () { // 获取store中存储的roles
+      return this.$store.state.roles
     },
-    methods: {
-      loadAnnouncement() {
-        announcement.getAnnouncement(this.currentPage, this.pageSize).then(res => {
-          this.total = res.data.total;
-          this.announcementList = res.data.rows;
-          this.loading = false
-        })
-      },
-      currentChange(currentPage) { //页码更改事件处理
-        this.currentPage = currentPage;
-        this.loadAnnouncement();
-      },
-      getStoreRoles() { //获取store中存储的roles
-        return this.$store.state.roles;
-      },
-      getTime(time) {//将时间戳转化为几分钟前，几小时前
-        return date.timeago(time);
-      }
-    },
+    getTime (time) { // 将时间戳转化为几分钟前，几小时前
+      return date.timeago(time)
+    }
   }
+}
 </script>
 <style scoped>
   #announcement {

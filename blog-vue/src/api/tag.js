@@ -1,27 +1,27 @@
 import request from '@/utils/request'
-import qs from 'qs';
+import qs from 'qs'
 
 export default {
-  getTag() {
+  getTag () {
     return request({
       url: '/tag',
       method: 'get'
     })
   },
-  addTag(tagName) {
+  addTag (tagName) {
     return request({
       url: '/tag',
       method: 'post',
       data: qs.stringify({'tagName': tagName})
     })
   },
-  deleteTag(tagId) {
+  deleteTag (tagId) {
     return request({
       url: '/tag/' + tagId,
-      method: 'delete',
+      method: 'delete'
     })
   },
-  updateTag(tagId, tagName) {
+  updateTag (tagId, tagName) {
     return request({
       url: '/tag',
       method: 'put',

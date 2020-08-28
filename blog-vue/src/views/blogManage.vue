@@ -71,80 +71,78 @@
   </div>
 </template>
 <script>
-  import blog from '@/api/blog'
-  import date from '@/utils/date'
+import blog from '@/api/blog'
+import date from '@/utils/date'
 
-  export default {
-    name: 'blogManage',
-    data() {
-      return {
-        blogData: [],
-        total: 0,        //数据总数
-        pageSize: 10,    //每页显示数量
-        currentPage: 1,   //当前页数
-        loading: true,
-        searchName: '',
-        searchFlag: false   //搜索状态 true 显示搜索数据 false显示正常数据
+export default {
+  name: 'blogManage',
+  data () {
+    return {
+      blogData: [],
+      total: 0, // 数据总数
+      pageSize: 10, // 每页显示数量
+      currentPage: 1, // 当前页数
+      loading: true,
+      searchName: '',
+      searchFlag: false // 搜索状态 true 显示搜索数据 false显示正常数据
+    }
+  },
+  created () {
+    this.load()
+  },
+  methods: {
+    load () {
+      if (this.searchFlag) {
+        blog.adminSearchBlog(this.searchName, this.currentPage, this.pageSize).then(res => {
+          this.blogData = res.data.rows
+          this.total = res.data.total
+          this.loading = false
+        })
+      } else {
+        blog.adminGetBlog(this.currentPage, this.pageSize).then(res => {
+          this.blogData = res.data.rows
+          this.total = res.data.total
+          this.loading = false
+        })
       }
     },
-    created() {
+    currentChange (currentPage) { // 页码更改事件处理
+      this.currentPage = currentPage
+      this.load()
+      scrollTo(0, 0)
+    },
+    searchSubmit () {
+      this.currentPage = 1
+      this.loading = true
+      this.searchFlag = true
       this.load()
     },
-    methods: {
-      load() {
-        if (this.searchFlag) {
-          blog.adminSearchBlog(this.searchName, this.currentPage, this.pageSize).then(res => {
-            this.blogData = res.data.rows;
-            this.total = res.data.total;
-            this.loading = false;
+    returnNormal () {
+      this.currentPage = 1
+      this.searchName = ''
+      this.loading = true
+      this.searchFlag = false
+      this.load()
+    },
+    getTime (time) {
+      return date.timeago(time)
+    },
+    deleteBlog (id) {
+      this.$confirm('是否删除此博客?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        blog.adminDeleteBlog(id).then(res => {
+          this.$message({
+            message: '删除成功',
+            type: 'success'
           })
-        }
-        else {
-          blog.adminGetBlog(this.currentPage, this.pageSize).then(res => {
-            this.blogData = res.data.rows;
-            this.total = res.data.total;
-            this.loading = false;
-          })
-        }
-      },
-      currentChange(currentPage) { //页码更改事件处理
-        this.currentPage = currentPage;
-        this.load();
-        scrollTo(0, 0);
-      },
-      searchSubmit() {
-        this.currentPage = 1;
-        this.loading = true;
-        this.searchFlag = true;
-        this.load()
-      },
-      returnNormal() {
-        this.currentPage = 1;
-        this.searchName = ''
-        this.loading = true;
-        this.searchFlag = false;
-        this.load()
-      },
-      getTime(time) {
-        return date.timeago(time)
-      },
-      deleteBlog(id) {
-        this.$confirm('是否删除此博客?', '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          type: 'warning'
-        }).then(() => {
-          blog.adminDeleteBlog(id).then(res => {
-            this.$message({
-              message: '删除成功',
-              type: 'success'
-            });
-            this.load();
-          });
-        }).catch(() => {
+          this.load()
         })
-
-      }
+      }).catch(() => {
+      })
     }
   }
+}
 </script>

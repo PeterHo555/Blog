@@ -2,7 +2,7 @@
   <div id="bottom">
     <div class="line"></div>
     <p id="txt">
-      <el-link :underline="false" type="info">© 2020 博客客客客&nbsp;&nbsp;</el-link>
+      <el-link :underline="false" type="info">© 2020 Blog of PeterHo&nbsp;&nbsp;</el-link>
     </p>
 
     <div class="line"/>
@@ -10,9 +10,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'bottom'
-  }
+export default {
+  name: 'bottom'
+}
 </script>
 <style scoped>
   .line {

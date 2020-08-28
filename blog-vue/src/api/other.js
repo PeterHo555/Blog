@@ -1,8 +1,8 @@
 import request from '@/utils/request'
-import qs from 'qs';
+import qs from 'qs'
 
 export default {
-  getIPInfo(ip) {
+  getIPInfo (ip) {
     return request({
       url: '/ip',
       method: 'post',

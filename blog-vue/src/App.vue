@@ -7,13 +7,13 @@
 </template>
 
 <script>
-  import bar from '@/components/bar'
-  import bottom from '@/components/bottom'
+import bar from '@/components/bar'
+import bottom from '@/components/bottom'
 
-  export default {
-    components: {bar, bottom},
-    name: 'App'
-  }
+export default {
+  components: {bar, bottom},
+  name: 'App'
+}
 </script>
 
 <style>
