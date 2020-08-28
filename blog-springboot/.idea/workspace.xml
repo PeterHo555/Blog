@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34c9f5db-20aa-4f07-8e7a-715925a431b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/announcement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/announcement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/discuss.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/discuss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/other.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/other.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/reply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/api/userLike.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/api/userLike.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/HelloWorld.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/bar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/blogOverView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/blogOverView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/bottom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/bottom.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/hotBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/hotBlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/indexBlogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/indexBlogList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/introduction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/introduction.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/myBlogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/myBlogList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/myTag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/myTag.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/newDiscuss.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/newDiscuss.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/statisticalBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/statisticalBlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/components/userNewDiscuss.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/components/userNewDiscuss.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/utils/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/utils/date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/utils/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/utils/file.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/utils/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/account.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/account.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/admins.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/admins.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/announcement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/announcement.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/announcementManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/announcementManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/blog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/blogManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/blogManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/codeManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/codeManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/editBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/editBlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/forgetPwd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/forgetPwd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/message.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/message.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/myBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/myBlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/newBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/newBlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/notfound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/notfound.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/searchBlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/searchBlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog-vue/src/views/userManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/src/views/userManage.vue" afterDir="false" />
-    </list>
+    <list default="true" id="34c9f5db-20aa-4f07-8e7a-715925a431b6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +96,7 @@
       <workItem from="1598527522435" duration="605000" />
       <workItem from="1598528170780" duration="201000" />
       <workItem from="1598528394407" duration="2732000" />
-      <workItem from="1598532320929" duration="5307000" />
+      <workItem from="1598532320929" duration="5539000" />
     </task>
     <servers />
   </component>
