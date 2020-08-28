@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34c9f5db-20aa-4f07-8e7a-715925a431b6" name="Default Changelist" comment="" />
+    <list default="true" id="34c9f5db-20aa-4f07-8e7a-715925a431b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../blog-vue/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-vue/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +98,7 @@
       <workItem from="1598527522435" duration="605000" />
       <workItem from="1598528170780" duration="201000" />
       <workItem from="1598528394407" duration="2732000" />
-      <workItem from="1598532320929" duration="5539000" />
+      <workItem from="1598532320929" duration="5763000" />
     </task>
     <servers />
   </component>

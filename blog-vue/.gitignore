@@ -15,6 +15,7 @@ selenium-debug.log
 *.njsproj
 *.sln
 *.yml
+application.yml
 blog-vue.iml
 .babelrc
 .editorconfig
