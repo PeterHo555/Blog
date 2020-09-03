@@ -45,17 +45,31 @@
 
 ... 
 
+# 
 
-有毕设需求可以联系`1970432392@qq.com`
+#### 项目启动
 
-# 项目停止维护
+* 消息队列 RabbitMQ启动
 
+  >路径：/usr/local/Cellar/rabbitmq/3.8.7/sbin/
+  >
+  >打开此文件终端：
+  >
+  >sudo rabbitmq-server
+  >
+  >浏览器内输入 http://localhost:15672
+  >
+  >账号：guest
+  >
+  >密码：guest
 
+* Redis启动
 
+  > 终端：redis-server
 
+* SpringBoot Application 启动
 
-[JetBrains Open Source License](https://www.jetbrains.com/?from=Blog)
+* vue项目启动
 
-<div align="left">
-<img src="img/jetbrains-training-partner.png"  height="300" width="300">
-</div>
+  > 终端 ：npm run dev
+

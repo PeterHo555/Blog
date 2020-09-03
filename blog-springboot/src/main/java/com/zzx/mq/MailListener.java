@@ -5,20 +5,14 @@ import com.zzx.config.MailConfig;
 import com.zzx.config.RabbitMqConfig;
 import com.zzx.model.entity.MailMessage;
 import com.zzx.service.UserService;
-import com.zzx.utils.DateUtil;
-import com.zzx.utils.LoggerUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -57,6 +51,7 @@ public class MailListener {
     }
 
     private void sendMail(String mail, String code) {
+        System.out.println("成功发送邮件");
         //发送邮件
         mailSender.send(mailMessage
                 .create(mail, "邮箱验证码", "邮箱验证码：" + code + "，" + MailConfig.EXPIRED_TIME + "分钟内有效"));

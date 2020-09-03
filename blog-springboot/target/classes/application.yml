@@ -19,10 +19,10 @@ spring:
     add-mappings: false
   ###邮箱配置
   mail:
-    host: smtp.qq.com
+    host: smtp.163.com
     port: 465
-    username: 454028521@qq.com
-    password: dxvblwiarhinbjih
+    username: ph5testing@163.com
+    password: QSQIWHXVNCXDSXM
     default-encoding: UTF-8
     properties:
       mail:
